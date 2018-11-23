@@ -9,32 +9,45 @@
 .font-face(Roboto Slab, RobotoSlab-Bold, bold);                           
                                                             opensans-bold-webfont.eot
 */
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+  @font-face{
+    font-family: @family;
+    src:url('../fonts/@{filename}.eot');
+    src:url('../fonts/@{filename}.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/@{filename}.woff') format('woff'),
+    url('../fonts/@{filename}.ttf') format('truetype'),
+    url('../fonts/@{filename}.svg#@{filename}') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
 
 .font-face(@family, @filename: @family, @weight: normal, @style: normal){
     @font-face{
         font-family: @family;
-        src:url('../fonts/@{filename}.eot');
-        src:url('../fonts/@{filename}.eot?#iefix') format('embedded-opentype'),
-                url('../fonts/@{filename}.woff') format('woff'),
-                url('../fonts/@{filename}.ttf') format('truetype'),
-                url('../fonts/@{filename}.svg#@{filename}') format('svg');
+        src:url('../fonts/@{filename}-webfont.eot');
+        src:url('../fonts/@{filename}-webfont.eot?#iefix') format('embedded-opentype'),
+                url('../fonts/@{filename}-webfont.woff') format('woff'),
+                url('../fonts/@{filename}-webfont.ttf') format('truetype'),
+                url('../fonts/@{filename}-webfont.svg#@{filename}') format('svg');
         font-weight: @weight;
         font-style: @style;
     }
 }
+
 .font-face("PFCentroSlabProBold" ,PFCentroSlabProBold);
 .font-face("PFCentroSlabProMedium" ,PFCentroSlabProMedium);
 .font-face("Raleway" ,RalewayBold);
 .font-face("Raleway" ,RalewayRegular);
 .font-face("Raleway" ,RalewaySemiBold);
 .font-face("Roboto" ,RobotoBold);
-.font-face('Open Sans' ,opensans-bold-webfont);
-.font-face('Open Sans' ,opensans-light-webfont);
-.font-face('Open Sans' ,opensans-regular-webfont);
-.font-face('Open Sans' ,opensans-italic-webfont);
 .font-face('Dancing Script' ,dancingscript-regular-webfont);
 .font-face('Dancing Script' ,dancingscript-bold-webfont);
-
-
+.font-face("PTSans" ,ptc55f-webfont);
+.font-face("PTSans" ,ptc75f-webfont);
+.font-face("PTSans" ,ptn57f-webfont);
+.font-face("PTSans" ,ptn77f-webfont);
+.font-face("PTSans" ,pts55f-webfont);
+.font-face("PTSans" ,pts56f-webfont);
 
 
