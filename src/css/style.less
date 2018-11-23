@@ -1,0 +1,128 @@
+// out: null
+
+@import "_variables";
+@import "_helpers";
+
+/* Project Elements
+==============================*/
+@import "_elements";
+
+
+.reset();
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: @ff-s-serifArial;
+    font-size: @regular;
+    color: @base_color;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    &:focus {
+        outline: none;
+    }
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/* Bower components import
+==============================*/
+@import "../../bower_components/lesshat/less/shape";
+
+
+/* Vendor libs import
+==============================*/
+@import (less) "libs/font-awesome.css";
+@import "libs/fonts";
+@import "libs/myFrameworks/my2";
+@import "libs/smart-grid";
+
+
+
+/* Pages import
+==============================*/
+@import "pages/home";
+@import "pages/header";
+@import "pages/logo";
+@import "pages/inf";
+@import "pages/news";
+@import "pages/footer";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  .text-white();
+  background: #000000 url(../../build/i/bg-i/bg-body.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size:cover;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+/*
+.debug {
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+*/
+
+html {
+  .html-fz(16);
+
+  .sm-block({
+      .html-fz(15);
+  });
+
+  .xs-block({
+      .html-fz(14);
+  });
+
+  .xxs-block({
+    .html-fz(13);
+  });
+}
+
+.wrapper {
+    .wrapper();
+}
+
+.btn {
+  @brown: #663d15;
+  .button();
+  .black();
+  .padding-xlarge();
+  .hover-brown();
+  text-transform: uppercase;
+  .rem-size(14);
+  .text-bold();
+}
+
