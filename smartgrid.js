@@ -6,11 +6,11 @@ smartgrid('src/css/libs', {
     columns: 12,
     offset: "20px",
     container: {
-        maxWidth: "1080px"
+        maxWidth: "992px"
     },
     breakPoints: {
         md: {
-            width: "992px",
+            width: "960px",
             fields: "10px"
         },
         sm: {
