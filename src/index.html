@@ -220,27 +220,37 @@
                 </article>
                 <!-- End news-1 -->
                 <aside class="news__sidebar">
-                    <div class="sidebar">
-                        <div class="sidebar__panel">
-                            <header class="sidebar__heading">
-                                <h3 class="sidebar__title">
-                                    ФОТОГАЛЕРЕЯ
+                    <form class="form" action="#">
+                        <div class="form__panel">
+                            <header class="form__heading">
+                                <h3 class="form__title">
+                                    ЗАПИСАТЬСЯ
                                 </h3>
+                                <p class="form__desc">
+                                    УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ
+                                    СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+                                </p>
                             </header>
-                            <div class="sidebar__figure">
-                                <img class="sidebar__image" src="i/img_gallery_1.jpg" width="286" height="164" alt="Фото в фотогалере">
+                            <div class="form__content">
+                                <div class="input__group">
+                                    <input type="text" name="date" placeholder="ДАТА">
+                                    <input type="text" name="time" placeholder="ВРЕМЯ">
+                                </div>
+                                <!-- End input__group -->
+                                <div class="input__group">
+                                    <input type="text" name="user_name" placeholder="ВАШЕ ИМЯ">
+                                    <input type="text" name="phone" placeholder="ТЕЛЕФОН">
+                                </div>
+                                <!-- End input__group -->
                             </div>
-                            <footer class="sidebar__footer">
-                                <button type="button" class="btn btn__prev">
-                                    Назад
-                                </button>
-                                <button type="button" class="btn btn__next">
-                                    Вперед
+                            <footer class="form__footer">
+                                <button type="submit" class="btn">
+                                    ОТПРАВИТЬ
                                 </button>
                             </footer>
                         </div>
-                    </div>
-                    <!-- // sidebar -->
+                    </form>
+                    <!-- // form -->
                 </aside>
                 <!-- End news-2 -->
             </div>
