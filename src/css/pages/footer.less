@@ -4,6 +4,54 @@
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #242424;
+  background: url(../../build/i/bg-i/bg_footer.jpg);
+
+  .socials__link {
+    font-size: 0;
+    position: relative;
+    .dib-mid();
+  }
+
+  .socials__link-vk {
+    background: black url(../../build/i/icons/vk.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    &:hover {
+      background: #fff  url(../../build/i/bg-i/vk-h.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 20;
+    }
+  }
+
+  .socials__link-fb {
+    background: black url(../../build/i/icons/fb.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+     position: relative;
+
+    &:hover {
+      background: #fff  url(../../build/i/icons/fk-h.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 20;
+    }
+  }
+
+  .socials__link-inst {
+    background: black url(../../build/i/icons/inst.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    &:hover {
+      background: #fff  url(../../build/i/icons/inst-h.png);
+       background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 20;
+    }
+  }
 }
 
 .footer__wrap {
@@ -11,27 +59,62 @@
 }
 
 .footer__contacts {
-  .min-height(93);
-  .green();
   .margin-bottom();
   .col();
-  .size(4);
-  .shift-right(1);
+  .size(5);
+  .PTSans(700);
+  .rem-size(14);
+  .line-height(24);
+
+  a {
+    color: #ffffff;
+    .PTSans(700);
+    .rem-size(14);
+    .line-height(24);
+    text-decoration: underline;
+    .transition();
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .footer__socials {
-  .min-height(93);
-  .green();
   .margin-bottom();
   .col();
-  .size(2);
-  .shift-right(3);
+  .size(3);
+  .shift-right(2);
+
+  p {
+    margin-bottom: 20px;
+    .PTSans(700);
+  .rem-size(14);
+  .line-height(24);
+  }
+
+  .btn {
+    padding: 20px !important;
+    margin-right: 5px;
+    position: relative;
+
+    &:hover {
+      z-index: 10;
+    }
+  }
 }
 
 .footer__mail {
-  .min-height(93);
-  .green();
   .margin-bottom();
   .col();
   .size(2);
+
+  p {
+    margin-bottom: 20px;
+    .PTSans(700);
+    .rem-size(14);
+    .line-height(24);
+  }
 }
+
+

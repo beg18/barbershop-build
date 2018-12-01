@@ -98,6 +98,7 @@ main {
 */
 
 html {
+  box-sizing: border-box;
   .html-fz(16);
 
   .sm-block({
@@ -111,6 +112,11 @@ html {
   .xxs-block({
     .html-fz(13);
   });
+}
+
+*, *:before,
+*, *:after {
+  box-sizing: inherit;
 }
 
 .wrapper {
