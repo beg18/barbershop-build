@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
 
-    <meta name="author" content="">
+    <meta name="author" content="Alibekov Khiyirbeg">
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -17,7 +17,7 @@
     <meta name="msapplication-TileImage" content="i/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Project Title</title>
+    <title>Project Barbershop</title>
 
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -302,6 +302,40 @@
         </div>
     </section>
     <!-- End news -->
+    <div class="modal">
+        <form class="modal__panel">
+            <header class="modal__heading">
+                <h3 class="modal__title">
+                    ЛИЧНЫЙ КАБИНЕТ
+                </h3>
+                <p class="modal__desc">
+                    ВВедите пожалуйста свой логин и пароль
+                </p>
+            </header>
+            <div class="modal__content">
+                <div class="input__group">
+                    <input class="modal__input" type="text" name="login" placeholder="Логин" required>
+                </div>
+                <div class="input__group">
+                    <input class="modal__input" type="password" name="password" placeholder="Пароль" required>
+                </div>
+                <label>
+                    <input type="checkbox" name="check">
+                    <span class="modal__input-check"></span>
+                    ЗАПОМНИТЕ МЕНЯ
+                </label>
+                <a href="#" class="modal__link">
+                    Я ЗАБЫЛ ПАРОЛЬ!
+                </a>
+            </div>
+            <footer class="modal__footer">
+                <button type="submit" class="btn btn__modal">
+                    ВОЙТИ
+                </button>
+            </footer>
+        </form>
+    </div>
+    <!-- // modal -->
 </main>
 <!-- End main -->
 <footer class="footer">
