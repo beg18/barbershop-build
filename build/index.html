@@ -70,7 +70,7 @@
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">
+                        <a href="#" class="navigation__link" id="navigation_link">
                             КОНТАКТЫ
                         </a>
                     </li>
@@ -78,7 +78,7 @@
             </nav>
             <!-- // navigation -->
             <div class="user__block">
-                <a href="#" class="login">
+                <a href="#" class="login" id="js_login">
                     Вход
                 </a>
             </div>
@@ -302,8 +302,9 @@
         </div>
     </section>
     <!-- End news -->
-    <div class="modal">
-        <form class="modal__panel">
+    <div class="modal" id="js_modal">
+        <button class="modal__btn-close" id="js_btn-close" type="button"></button>
+        <form class="modal__panel" action="#" method="post">
             <header class="modal__heading">
                 <h3 class="modal__title">
                     ЛИЧНЫЙ КАБИНЕТ
@@ -314,19 +315,21 @@
             </header>
             <div class="modal__content">
                 <div class="input__group">
-                    <input class="modal__input" type="text" name="login" placeholder="Логин" required>
+                    <input class="modal__input modal__input-login" type="text" name="login" placeholder="Логин" required>
                 </div>
                 <div class="input__group">
-                    <input class="modal__input" type="password" name="password" placeholder="Пароль" required>
+                    <input class="modal__input modal__input-passw" type="password" name="password" placeholder="Пароль" required>
                 </div>
-                <label>
-                    <input class="modal__input-checkbox" type="checkbox" name="check">
-                    <span class="modal__input-check"></span>
-                    ЗАПОМНИТЕ МЕНЯ
-                </label>
-                <a href="#" class="modal__link">
-                    Я ЗАБЫЛ ПАРОЛЬ!
-                </a>
+                <div class="input__group">
+                    <label class="login__checkbox">
+                        <input class="modal__input-checkbox" type="checkbox" name="check">
+                        <span class="modal__input-check"></span>
+                        ЗАПОМНИТЕ МЕНЯ
+                    </label>
+                    <a href="#" class="modal__link">
+                        Я ЗАБЫЛ ПАРОЛЬ!
+                    </a>
+                </div>
             </div>
             <footer class="modal__footer">
                 <button type="submit" class="btn btn__modal">
